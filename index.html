@@ -98,7 +98,19 @@ this paper invetigates the causes of the JAL123 accident
 
 <body>
 
-  
+  <h3>Last Updated</h3>
+
+<p id="lastModified">Loading...</p>
+
+<script>
+fetch('https://api.github.com/repos/FY6977253/FEPSFY6977253/commits')
+  .then(response => response.json())
+  .then(data => {
+      const commitDate = data[0].commit.author.date;
+      document.getElementById("lastModified").innerHTML =
+          "Last Modified: " + new Date(commitDate).toLocaleString();
+  });
+</script>
 </body>  
 
 
