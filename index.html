@@ -18,8 +18,6 @@
 <h3>Contents</h3>
   <a href="#abstract">Abstract</a><br>
 
-  <a href="#introduction">Introduction</a><br>
-
   <a href="#analysis">Analysis and Discussion</a><br>
 
   <a href="#references">References</a><br>
@@ -30,13 +28,10 @@
   <p id="abstract_InText">
 This report examines the crash of Japan Airlines Flight 123 on 12th August 1985, which is the deadliest single-aircraft accident in aviation history. The investigation determined that the cause of the crash was a rupture of the aft (rear) pressure bulkhead, which had been improperly repaired following a tail strike that happened 7 years prior. This structural failure led to the loss of all hydraulic systems and therefore control of the aircraft. The report analyses the cause of the accident as well as evaluating the lessons that have been learnt since. This includes the safety regulations, maintenance procedures, inspection requirements and aircraft design practices. The findings demonstrate that the accident significantly influenced the modern aviation safety standards and contributed to reducing the likelihood of similar failures occurring in the future.
   </p>
-  <h3 id="introduction">Introduction</h3>
-  <p id="Introduction_InText">
-    JAL123 crashed 12/08/85 after bulkhead failure
-  </p>
+  
 
   <h3 id="analysis">Analysis and Discussion</h3>
-  <P id="Analysis_InText">
+  <div id="Analysis_InText">
     <p>
       On the 12th August 1985 a Boeing 747SR-100 departed from Tokyo, travelling to Osaka with the flight code JAL123. This aircraft with the registration JA8119 has operated this is exact domestic flight hundreds of times before, but this flight was very different. 
     </p>
@@ -48,7 +43,7 @@ This report examines the crash of Japan Airlines Flight 123 on 12th August 1985,
   </p>
 <p>
   Despite the inability to control the aircraft, the pilots were able to keep the aircraft in the sky for 32 minutes until the plane crashed. 505 passengers and 15 crew died, leaving only 4 survivors. The medical staff found bodies with injuries that suggest they survived the crashed only to die from shock, exposure to low temperatures or injuries that, if tended to earlier, would not have been fatal. Yumi Ochiai recalled from her hospital bed that she saw bright lights and the sound of a helicopter, while hearing screaming and moaning that gradually died away during the night. Overall, it is believed that an extra 20-50 people could have survived had the search and rescue team been deployed sooner. (Job, Macarthur (1996). Air Disaster. Vol. 2. Aerospace Publications. pp. 136–153. ISBN 978-1-875671-19-9. & Magnuson, Ed (June 21, 2005). "Disasters: Last Minutes of JAL 123". Time. Retrieved 2024-01-05.)
-</p>
+</div>
   
   </P>
    <table>
@@ -182,10 +177,10 @@ This report examines the crash of Japan Airlines Flight 123 on 12th August 1985,
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
+    
     const AnalysisCount = displayWordCount("Analysis_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = AnalysisCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
