@@ -197,10 +197,10 @@ All 4 hydraulic lines were lost when the torque box and rudders separated. The 4
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    
-    const AnalysisCount = displayWordCount("Analysis_InText");
+     const AnalysisCount = displayWordCount("Analysis_InText");
+    const LessonsCount = displayWordCount("Lessons_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = AnalysisCount;
+    const totalWordCount = AnalysisCount + LessonsCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
